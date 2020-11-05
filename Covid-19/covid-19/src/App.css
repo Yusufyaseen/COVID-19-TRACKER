@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f6fa;
+  font-family: "Tahoma", "Arial";
+}
+.App {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app__left {
+  flex: 0.9;
+}
+
+.app__dropdown {
+  background-color: white;
+  width: 150px;
+}
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.app__header > h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif "Lucida Sans", Arial,
+    sans-serif;
+  letter-spacing: 2px;
+  color: rgb(247, 2, 2);
+}
+.app__status {
+  display: flex;
+  justify-content: space-between;
+}
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+@media (max-width: 920px) {
+  .App {
+    flex-direction: column;
+  }
+  .app__left {
+    flex: 0.96;
+  }
+  .app__status {
+    flex-direction: column;
+  }
+  .app__status .iBox {
+    margin-bottom: 10px;
+  }
+  .app__right {
+    margin-top: 20px;
+  }
+}
